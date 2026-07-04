@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SteamTech — Manifest & Lua Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+    <div class="bg-circles">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="circle c3"></div>
+        <div class="circle c4"></div>
+    </div>
+    <div class="container">
+        <div class="header">
+            <div class="title-group">
+                <h1>SteamTech</h1>
+                <div class="sub">Manifest &amp; Lua Generator</div>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="text" id="depotInput" placeholder="enter Depot ID..." autofocus>
+            <button class="btn-generate" id="generateBtn">Generate</button>
+        </div>
+        <div class="status-msg" id="statusText"></div>
+        <div class="output" id="output">
+            <div class="label">output</div>
+            <div class="empty">enter a Depot ID and press Generate</div>
+        </div>
+        <div class="actions">
+            <button class="copy-btn" id="copyBtn">Copy</button>
+            <button class="btn-download" id="downloadBtn">Download ZIP</button>
+        </div>
+        <div class="footer">
+            <span>addappid(DepotID)</span> + <span>addappid(DepotID,0,"hash")</span> + <span>.manifest</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
